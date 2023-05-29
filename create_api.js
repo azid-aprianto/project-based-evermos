@@ -1,5 +1,5 @@
 import http from 'k6/http';
-import {check} from 'k6';
+import { check } from 'k6';
 
 export default function(){
     const res = http.post('https://reqres.in/api/users');
