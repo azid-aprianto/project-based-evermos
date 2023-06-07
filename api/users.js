@@ -7,7 +7,7 @@ export function CreateUser(payload){
             'Content-Type' : 'application/json'
         }
     }
-    return http.post(`${config.baseUrl}/users`, JSON.stringify(payload), params)
+    return http.post(`${config.baseUrl}/users/`, JSON.stringify(payload), params)
 }
 
 export function UpdateUser(payload, id){
