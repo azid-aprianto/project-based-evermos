@@ -3,7 +3,7 @@ import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporte
 import { check, group } from 'k6'
 
 export const options = {
-    summryTrendStats: ['min', 'avg', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
+    summaryTrendStats: ['min', 'avg', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
     thresholds: {
         http_req_duration: ['p(90)<2000', 'p(95)<3000', 'p(99)<4000']
     },
